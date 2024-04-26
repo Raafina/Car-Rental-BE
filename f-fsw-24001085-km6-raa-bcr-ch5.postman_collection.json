@@ -1,0 +1,1620 @@
+{
+	"info": {
+		"_postman_id": "46a95ff8-f058-4730-8646-5f7e58927c25",
+		"name": "f-fsw-24001085-km6-raa-bcr-ch5",
+		"description": "Penjelasan daftar API yang dapat memanipulasi data pengguna dan mobil.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24762611"
+	},
+	"item": [
+		{
+			"name": "transmissions",
+			"item": [
+				{
+					"name": "addTransmission",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Custom",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/transmissions",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"transmissions"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan data transmisi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getTarnsmissions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/transmissions",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"transmissions"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan semua data transmisi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getTransmission",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/transmissions/1",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"transmissions",
+								"1"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan data transmisi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "updateTransmission",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Custom2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/transmissions/5",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"transmissions",
+								"5"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mengubah data transmisi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTransmission",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/transmissions/5",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"transmissions",
+								"5"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menghapus data transmisi mobil berdasarkan ID"
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data transmisi mobil\n- Dapat diakses oleh pengguna yang memiliki role \"superadmin\" dan \"admin\""
+		},
+		{
+			"name": "types",
+			"item": [
+				{
+					"name": "addType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Offroad",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/types",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"types"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan data tipe mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getTypes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/types",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"types"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan semua data tipe mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/types/1",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"types",
+								"1"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan data tipe mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "updateType",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Offroad2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/types/12",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"types",
+								"12"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mengubah data tipe mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteType",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/types/12",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"types",
+								"12"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menghapus data tipe mobil berdasarkan ID"
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data tipe mobil\n- Dapat diakses oleh pengguna yang memiliki role \"superadmin\" dan \"admin\""
+		},
+		{
+			"name": "manufactures",
+			"item": [
+				{
+					"name": "addManufacture",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Supra",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/manufactures",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"manufactures"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan data manufaktur mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getManufactures",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/manufactures",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"manufactures"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan semua data manufaktur mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getManufacture",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/manufactures/1",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"manufactures",
+								"1"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan data manufaktur mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "updateManufacture",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Supra3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/manufactures/11",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"manufactures",
+								"11"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mengubah data manufaktur mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteManufacture",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/manufactures/11",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"manufactures",
+								"11"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menghapus data manufaktur mobil berdasarkan ID"
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data manufaktur mobil\n    \n- Dapat diakses oleh pengguna yang memiliki role Superadmin dan Admin"
+		},
+		{
+			"name": "options",
+			"item": [
+				{
+					"name": "addOption",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "NO2 NItro",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/options",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"options"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan data opsi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getOptions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/options",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"options"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan semua data opsi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getOption",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/options/31",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"options",
+								"31"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan data opsi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "updateOption",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "NO2 NItro Super",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/options/31",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"options",
+								"31"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mengubah data opsi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOption",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/options/31",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"options",
+								"31"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menghapus data opsi mobil berdasarkan ID"
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data opsi mobil\n    \n- Dapat diakses oleh pengguna yang memiliki role Superadmin dan Admin"
+		},
+		{
+			"name": "option-transactions",
+			"item": [
+				{
+					"name": "addOptionTransaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "car_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "option_id",
+									"value": "17",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/option-transactions",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"option-transactions"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkand data transaksi opsi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getOptionTransactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/option-transactions",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"option-transactions"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan semua data transaksi opsi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getOptionTransaction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/option-transactions/1",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"option-transactions",
+								"1"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan data transaksi opsi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "updateOptionTransaction",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "car_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "option_id",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/option-transactions/9",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"option-transactions",
+								"9"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mengubah data transaksi opsi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOptionTransaction",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/option-transactions/9",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"option-transactions",
+								"9"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menghapus data transaksi opsi mobil berdasarkan ID"
+					},
+					"response": []
+				}
+			],
+			"description": "- APlI yang berfungsi untuk memanipulasi data transaksi opsi mobil\n    \n- Dapat diakses oleh pengguna yang memiliki role Superadmin dan Admin"
+		},
+		{
+			"name": "specs",
+			"item": [
+				{
+					"name": "addSpec",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "150 CC Overbore",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/specs",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"specs"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan data spesifikasi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getSpecs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/specs",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"specs"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan semua data spesifikasi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getSpec",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/specs/1",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"specs",
+								"1"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan data spesifikasi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "updateSpec",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "150 CC Overbore Super",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/specs/34",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"specs",
+								"34"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mengubah data spesifikasi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSpec",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/specs/34",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"specs",
+								"34"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menghapus data spesifikasi mobil berdasarkan ID"
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data spesifikasi\n    \n- Dapat diakses oleh pengguna yang memiliki role Superadmin dan Admin"
+		},
+		{
+			"name": "spec-transactions",
+			"item": [
+				{
+					"name": "addSpecTransaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "car_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "spec_id",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/spec-transactions",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"spec-transactions"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan data transaksi spesifikasi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getSpecTransactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/spec-transactions",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"spec-transactions"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan semua data transaksi spesifikasi mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getSpecTransaction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/spec-transactions/1",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"spec-transactions",
+								"1"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan data transaksi spesifikasi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "updateSpecTransaction",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "car_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "spec_id",
+									"value": "13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/spec-transactions/9",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"spec-transactions",
+								"9"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mengubah data transaksi spesifikasi mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSpecTransaction",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/spec-transactions/9",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"spec-transactions",
+								"9"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menghapus data transaksi spesifikasi mobil berdasarkan ID"
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data transaksi spesifikasi\n    \n- Dapat diakses oleh pengguna yang memiliki role Superadmin dan Admin"
+		},
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "createCar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model",
+									"value": "BMW-100",
+									"type": "text"
+								},
+								{
+									"key": "manufacture_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Screenshot/New folder/Screenshot (32).png"
+								},
+								{
+									"key": "rent_day",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Mobil Tercepat",
+									"type": "text"
+								},
+								{
+									"key": "transmission_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "type_id",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2020",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/cars",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"cars"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan data mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getCars",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/cars",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"cars"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan semua data mobil"
+					},
+					"response": []
+				},
+				{
+					"name": "getCar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/cars/1",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"cars",
+								"1"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menampilkan data mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/cars/3",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"cars",
+								"3"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menghapus data mobil berdasarkan ID"
+					},
+					"response": []
+				},
+				{
+					"name": "updateCar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "model",
+									"value": "BMW-200",
+									"type": "text"
+								},
+								{
+									"key": "manufacture_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Screenshot/New folder/Screenshot (31).png"
+								},
+								{
+									"key": "rent_day",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Mobil Tercepat",
+									"type": "text"
+								},
+								{
+									"key": "transmission_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "type_id",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2020",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/cars/3",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"cars",
+								"3"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mengubah data mobil berdasarkan ID"
+					},
+					"response": []
+				}
+			],
+			"description": "- Request yang berfungsi untuk memanipulasi data mobil\n- Request createCar, updateCar, & deleteCar dapat diakses oleh pengguna yang memiliki role superadmin & admin\n    \n- Request getCars & getCar dapat diakses oleh pengguna yang memiliki role Superadmin, admin, & user"
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "raafi.user2@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Raafi User2",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/raafi/OneDrive/Pictures/Screenshots/Screenshot 2024-04-22 092238.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/api/authUser/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"authUser",
+								"register"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan/mendaftarkan pengguna dengan role \"user\""
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"raafi.user@gmail.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/authUser/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"authUser",
+								"login"
+							]
+						},
+						"description": "- Request yang akan berfungsi untuk masuk kedalam sistem dengan role \"user\""
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/authUser/profile",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"authUser",
+								"profile"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mendapatkan akun pengguna dengan role \"user\""
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data pengguna dengan role \"user\"\n- Dapat diakses secara publik\n- Role user hanya dapat melihat data mobil tanpa memanipulasinya"
+		},
+		{
+			"name": "admins",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "raafi.admin2@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Raafi Admin2",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/raafi/OneDrive/Pictures/Screenshots/Screenshot 2024-04-22 092238.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/authAdmin/register",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"authAdmin",
+								"register"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan/mendaftarkan pengguna dengan role \"admin\"\n- Hanya dapat dieskesusi pengguna dengan role \"superadmin\""
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"raafi.admin@gmail.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/authAdmin/login",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"authAdmin",
+								"login"
+							]
+						},
+						"description": "- Request yang akan berfungsi untuk masuk kedalam sistem dengan role \"admin\""
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/authAdmin/profile",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"authAdmin",
+								"profile"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mendapatkan akun pengguna dengan role \"admin\""
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data pengguna dengan role \"admin\"\n    \n- Role admin dapat melihat dan memanipulasi data mobil"
+		},
+		{
+			"name": "superadmins",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "raafi.superadmin2@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Raafi Superadmin2",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/raafi/OneDrive/Pictures/Screenshots/Screenshot 2024-04-22 092238.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}api/authSuperAdmin/register",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"authSuperAdmin",
+								"register"
+							]
+						},
+						"description": "- Request yang berfungsi untuk menambahkan/mendaftarkan pengguna dengan role \"superadmin\""
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"raafi.superadmin@gmail.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/authSuperAdmin/login",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"authSuperAdmin",
+								"login"
+							]
+						},
+						"description": "- Request yang akan berfungsi untuk masuk kedalam sistem dengan role \"superadmin\""
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}api/authSuperAdmin/profile",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"authSuperAdmin",
+								"profile"
+							]
+						},
+						"description": "- Request yang berfungsi untuk mendapatkan akun pengguna dengan role \"superadmin\""
+					},
+					"response": []
+				}
+			],
+			"description": "- API yang berfungsi untuk memanipulasi data pengguna dengan role \"superadmin\"\n    \n- Role \"superadmin\" dapat melihat dan memanipulasi data mobil, admin, dan superadmin"
+		}
+	]
+}
