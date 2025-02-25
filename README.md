@@ -4,7 +4,7 @@ Car-Rental-BE is a backend learning project for the MSIB Kemdikbud x Binar Acade
 ## 🚀 Key Features
 <ul>
     <li>Car Management (CRUD for car listings).</li>
-    <li>Authtenication for Admin.</li>
+    <li>Authtenication for Super Admin, Admin, and User.</li>
 </ul>
 
 ## 🛠️ Tech Stack
