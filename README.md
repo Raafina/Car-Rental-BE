@@ -49,14 +49,10 @@ Car-Rental-BE is a backend learning project for the MSIB Kemdikbud x Binar Acade
     </li>
 </ol>
 
-
-
 ## 🧑‍💻 User Demo Account
 - Superadmin
-  <pre>
-      <p>email : raafi.superadmin@gmail.com</p>
-      <p>password : 123</p>
-  </pre>
+  email : raafi.superadmin@gmail.com
+  password : 123
 - Admin
   email : raafi.admin@gmail.com
   password : 123
